@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Space Invaders Main Manù</title>
+    <link href="main.css" rel="stylesheet">
+
+    //sound track main page
+    <script>
+        const music = new Audio('./audio/track.mp3');
+        music.play();
+        music.loop =true;
+    </script>
+
+    //audio onclick
+    <audio>
+        <source src="audio/click.mp3" type="audio/mpeg">
+    </audio>
+    //js audio click
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    // video background
+    <video autoplay loop muted>
+        <source src="video/space.mp4" type="video/mp4">
+    </video>
+
+
+    <div class="form">
+        <img alt="Logo del tuo gioco" class="logo" src="images/logo.png">
+        <input class="inputText" placeholder="Inserisci il tuo nickname" type="text">
+
+        <div class="selectDifficulty">
+            <button class="facile" name="facile" onclick="playClick(); enemySpeed = 1" value="1">facile</button>
+            <button class="medio" name="medio" onclick="playClick(); enemySpeed = 2" value="2">medio</button>
+            <button class="difficile" name="difficile" onclick="playClick(); enemySpeed = 3" value="3">difficile</button>
+            <button class="leggenda" name="leggenda" onclick="playClick(); lenemySpeed = 4" value="4">leggenda</button>
+        </div>
+
+        <button class="inputSubmit" onclick="playClick()"><a href="game.html">GIOCA</a></button>
+    </div>
+
+<footer>
+    <p>Developed By @Fox_Incorporation</p>
+</footer>
+
+</body>
+
+</html>

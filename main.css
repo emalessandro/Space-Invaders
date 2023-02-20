@@ -1,0 +1,146 @@
+body {
+  background: #000;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.form {
+  margin: auto;
+  margin-top: 5%;
+  width: 100%;
+}
+
+.logo {
+  margin: 0 auto;
+  display: block;
+  width: 500px;
+}
+
+.inputText {
+  margin: auto;
+  margin-top: 5%;
+  display: block;
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
+}
+
+.inputSubmit {
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 10px;
+  background: #c00;
+  color: #fff;
+  cursor: pointer;
+  /*per far si che puntando su gioca si abbia il curose a mano*/
+}
+
+.selectDifficulty {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.facile {
+  font-weight: bold;
+  float: left;
+  padding: 10px;
+  margin: 5px;
+  font-size: 24px;
+  border-radius: 10px;
+  background: linear-gradient(to right, green, greenyellow, greenyellow, green);
+  background-size: 600%;
+  animation: rainbow 10s ease infinite;
+  color: #fff;
+  cursor: pointer;
+}
+
+.medio {
+  font-weight: bold;
+  float: left;
+  padding: 10px;
+  margin: 5px;
+  font-size: 24px;
+  border-radius: 10px;
+  background: linear-gradient(to right, orangered, orange, orange, orangered);
+  background-size: 600%;
+  animation: rainbow 10s ease infinite;
+  color: #fff;
+  cursor: pointer;
+}
+
+.difficile {
+  font-weight: bold;
+  float: left;
+  padding: 10px;
+  margin: 5px;
+  font-size: 24px;
+  border-radius: 10px;
+  background: linear-gradient(to right, red, orangered, orangered, red);
+  background-size: 600%;
+  animation: rainbow 10s ease infinite;
+  color: #fff;
+  cursor: pointer;
+}
+
+.leggenda {
+  font-weight: bold;
+  float: left;
+  padding: 10px;
+  margin: 5px;
+  font-size: 24px;
+  border-radius: 10px;
+  background: linear-gradient(to right, blue, blueviolet, blueviolet, blue);
+  background-size: 600%;
+  animation: rainbow 10s ease infinite;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgb(255, 253, 253);
+  color: #000000
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 600%;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 250px;
+}
+
+footer>p {
+  font-size: 30px;
+  color: #fff;
+  font-family: Marker Felt;
+}
+
+button>a {
+  text-decoration: none;
+  color: inherit;
+}

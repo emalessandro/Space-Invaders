@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Space Invaders Play</title>
+  <link rel="stylesheet" href="game.css">
+  <script src="game.js"></script>
+</head>
+<body  onload="preMove(); moveCannon()">
+<video autoplay loop muted>
+  <source src="video/space.mp4" type="video/mp4">
+</video>
+  <p>
+    <button class="button" id="btStart" onclick="reset(); myMove()">START</button>
+  </p>
+  <p>
+    <button class="button" id="btReset" onclick="reset(); preMove()">RESETTA</button>
+  </p>
+
+    <div id="container">
+      <img src="images/space invader.png" id="animate" alt="">
+      <!--<img src="images/space invader.png" id="animate2" alt="">-->
+    </div>
+    <div id="containerCannon">
+      <img src="images/cannon.png" id="animateCannon" alt="">
+    </div>
+  <p>
+    <button class="buttonOff" id="btShoot" onclick="shoot()" disabled>SHOOT</button>
+  </p>
+</body>
+<script src="app-speed.js"></script>
+</html>

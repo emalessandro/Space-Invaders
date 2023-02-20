@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+#container {
+  height: 400px;
+  position: relative;
+  border: 2px solid white;
+  border-bottom: none;
+  margin: 20px;
+  margin-bottom: 0;
+  }
+#containerCannon {
+  border: 2px solid white;
+  height: 50px;
+  position: relative;
+  border-top: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#animateCannon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+  #animate {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+  }
+  
+  .button{
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .buttonOff{
+    color: rgba(0, 0, 0, 0.287);
+    border: 2px solid rgba(0, 0, 0, 0.275);
+    background-color: rgba(255, 255, 255, 0.416);
+  }
+  
+  .buttonShoot{
+    color: rgb(255, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+    margin-left: 180px;
+  }
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
